@@ -1,0 +1,118 @@
+.bill-paper {
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fa) !important;
+  border-radius: 16px !important;
+  padding: 2.5rem !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+  animation: slideUp 0.5s ease-out;
+}
+
+.bill-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.bill-title {
+  color: #2c3e50 !important;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+}
+
+.bill-divider {
+  margin: 1.5rem 0 !important;
+  background: linear-gradient(90deg, transparent, #3498db, transparent) !important;
+  height: 2px !important;
+}
+
+.bill-info-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: rgba(236, 240, 241, 0.5);
+  border-radius: 12px;
+}
+
+.bill-info-text {
+  color: #34495e !important;
+  margin-bottom: 0.5rem !important;
+  font-size: 1rem !important;
+}
+
+.bill-company-info {
+  text-align: right;
+  padding-left: 2rem;
+  border-left: 3px solid #3498db;
+}
+
+.bill-table-container {
+  box-shadow: none !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px !important;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.table-header {
+  background: linear-gradient(45deg, #3498db, #2980b9) !important;
+}
+
+.table-header-cell {
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 1rem !important;
+}
+
+.table-row {
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #f8f9fa;
+}
+
+.table-cell {
+  padding: 1rem !important;
+  color: #2c3e50 !important;
+}
+
+.total-cell {
+  font-weight: 700 !important;
+  color: #3498db !important;
+  font-size: 1.1rem !important;
+}
+
+.bill-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #e0e0e0;
+  text-align: center;
+  position: relative;
+}
+
+.footer-text {
+  color: #7f8c8d !important;
+  font-size: 0.95rem !important;
+}
+
+.bill-footer::before {
+  content: '✦';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 10px;
+  color: #3498db;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

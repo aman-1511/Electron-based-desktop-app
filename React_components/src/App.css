@@ -1,0 +1,219 @@
+/* Modern gradient background */
+body {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container animations and styling */
+.app-container {
+  animation: fadeIn 0.8s ease-out;
+  padding: 2rem 1rem;
+}
+
+/* Main paper container */
+.main-paper {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 24px !important;
+  padding: 2.5rem !important;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Title styling */
+.app-title {
+  color: #1a237e !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-bottom: 2.5rem !important;
+  font-size: 2.5rem !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.app-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 4px;
+  background: linear-gradient(90deg, #84fab0, #8fd3f4);
+  border-radius: 2px;
+}
+
+/* File upload section */
+.file-upload-section {
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  border: 2px dashed #8fd3f4;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.file-upload-section:hover {
+  border-color: #84fab0;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* File input styling */
+.file-input {
+  width: 100%;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  background: white;
+}
+
+.file-input:hover {
+  border-color: #84fab0;
+  background: #f8fafc;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+/* Button styles */
+.primary-button {
+  background: linear-gradient(45deg, #84fab0, #8fd3f4) !important;
+  padding: 12px 30px !important;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #1a237e !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(132, 250, 176, 0.3) !important;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(132, 250, 176, 0.4) !important;
+}
+
+.success-button {
+  background: linear-gradient(45deg, #00c9ff, #92fe9d) !important;
+  padding: 12px 30px !important;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #1a237e !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(0, 201, 255, 0.3) !important;
+}
+
+.success-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 201, 255, 0.4) !important;
+}
+
+/* Bills list section */
+.bills-list {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+}
+
+.bills-list-title {
+  color: #1a237e !important;
+  margin-bottom: 1.5rem !important;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #84fab0;
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+}
+
+/* Saved bill cards */
+.saved-bill {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.3s ease;
+  background: white;
+  border: 1px solid rgba(132, 250, 176, 0.3);
+}
+
+.saved-bill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(31, 38, 135, 0.15);
+}
+
+/* Remove button */
+.remove-bill-button {
+  position: absolute !important;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  background: rgba(255, 68, 68, 0.1) !important;
+  color: #ff4444 !important;
+}
+
+.remove-bill-button:hover {
+  background: #ff4444 !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+/* PDF preview section */
+.pdf-preview {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
+  border: 1px solid rgba(132, 250, 176, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Print specific styles */
+.print-bill {
+  page-break-after: always;
+  margin-bottom: 30px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+  }
+  
+  .app-title {
+    font-size: 2rem !important;
+  }
+  
+  .main-paper {
+    padding: 1.5rem !important;
+  }
+}
