@@ -14,7 +14,7 @@ This is an Electron-based desktop application built using React.js that allows u
 ### Steps to Run the App 
 1. **Clone the Repository**  
    Clone the project repository to your local machine:  
-   git clone https://github.com/your-username/electron-bill-printer.git  
+   git clone https://github.com/aman-1511/Electron-based-desktop-app 
    cd electron-bill-printer
 2. Install Dependencies: npm install  
 3. Change the directory: cd frontend
