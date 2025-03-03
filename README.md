@@ -1,4 +1,4 @@
-#Electron-Based Desktop App for Printing Bills
+##Electron-Based Desktop App for Printing Bills
 
 ## Overview  
 This is an Electron-based desktop application built using React.js that allows users to:  
@@ -14,13 +14,14 @@ This is an Electron-based desktop application built using React.js that allows u
 ### Steps to Run the App 
 1. **Clone the Repository**  
    Clone the project repository to your local machine:  
-   git clone https://github.com/aman-1511/Electron-based-desktop-app 
-   cd electron-bill-printer
+   a. git clone https://github.com/aman-1511/Electron-based-desktop-app 
+   b. cd electron-bill-printer
 2. Install Dependencies: npm install  
 3. Change the directory: cd frontend
 4. Build the React App: npm run build
-5. Start the Electron App: cd ..  
-                           npm run electron-start  
+5. Start the Electron App: i.cd ..
+                           ii. npm run electron-start  
+                           
 
    
    
